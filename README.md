@@ -7,6 +7,8 @@ VBinDiff was inspired by the Compare Files function of the [ProSel utilities by 
 
 The single-file mode was inspired by the LIST utility of [4DOS and friends](http://jpsoft.com/take-command-windows-scripting.html).  While [less](http://www.greenwoodsoftware.com/less/) provides a good line-oriented display, it has no equivalent to LIST's hex display.  (True, you can pipe the file through [hexdump](http://linux.die.net/man/1/hexdump), but that's incredibly inefficient on multi-gigabyte files.)
 
+NOTE: Since the original upstream repository at https://github.com/madsen/vbindiff/ seems to be abandoned, and had a few critical issues, i made this repo that includes all pending fixes/patches.
+
 
 Working with This Repository
 ----------------------------
