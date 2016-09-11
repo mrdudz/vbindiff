@@ -1564,7 +1564,11 @@ void gotoPosition(Command cmd)
   if (!buf[0])
     return;
 
+#ifdef _MSC_VER
   FPos  pos = _strtoui64(buf, NULL, 16);
+#else
+  FPos  pos = strtoull(buf, NULL, 16);
+#endif
 
   if (cmd & cmgGotoTop)
     file1.moveTo(pos);
